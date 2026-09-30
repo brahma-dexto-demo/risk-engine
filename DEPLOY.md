@@ -59,9 +59,14 @@ job_id = batch.submit_job(
     jobName=f"risk-engine-{sha[:12]}",
     jobQueue="brahma-demo-queue",
     jobDefinition=registered["jobDefinitionArn"],
+    tags={"project": "brahma-demo"},
+    propagateTags=True,
 )["jobId"]
 print({"job_id": job_id})
 ```
+
+Preserve `tags={"project": "brahma-demo"}` and `propagateTags=true` in the rendered
+definition and submission so job tags reach the ECS task, as demo-infra requires.
 
 The definition uses Fargate with 1 vCPU / 2 GB, roles `brahma-demo-batch-exec` and
 `brahma-demo-batch-job`, and `/aws/batch/job` logs. The execution role pulls ECR
