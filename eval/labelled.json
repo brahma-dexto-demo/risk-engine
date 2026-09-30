@@ -1,0 +1,702 @@
+[
+  {
+    "id": "label_859_0000",
+    "days_since_last_login": 73,
+    "open_tickets": 13,
+    "monthly_spend_usd": 5569.77,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0001",
+    "days_since_last_login": 6,
+    "open_tickets": 7,
+    "monthly_spend_usd": 24981.44,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0002",
+    "days_since_last_login": 75,
+    "open_tickets": 7,
+    "monthly_spend_usd": 18784.87,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0003",
+    "days_since_last_login": 0,
+    "open_tickets": 2,
+    "monthly_spend_usd": 10323.48,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0004",
+    "days_since_last_login": 98,
+    "open_tickets": 5,
+    "monthly_spend_usd": 21470.29,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0005",
+    "days_since_last_login": 89,
+    "open_tickets": 7,
+    "monthly_spend_usd": 6663.84,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0006",
+    "days_since_last_login": 97,
+    "open_tickets": 0,
+    "monthly_spend_usd": 19961.7,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0007",
+    "days_since_last_login": 23,
+    "open_tickets": 8,
+    "monthly_spend_usd": 6588.97,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0008",
+    "days_since_last_login": 69,
+    "open_tickets": 10,
+    "monthly_spend_usd": 2215.81,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0009",
+    "days_since_last_login": 80,
+    "open_tickets": 14,
+    "monthly_spend_usd": 11301.02,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0010",
+    "days_since_last_login": 73,
+    "open_tickets": 2,
+    "monthly_spend_usd": 11129.58,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0011",
+    "days_since_last_login": 35,
+    "open_tickets": 1,
+    "monthly_spend_usd": 21653.1,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0012",
+    "days_since_last_login": 46,
+    "open_tickets": 6,
+    "monthly_spend_usd": 23373.96,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0013",
+    "days_since_last_login": 1,
+    "open_tickets": 4,
+    "monthly_spend_usd": 18018.57,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0014",
+    "days_since_last_login": 87,
+    "open_tickets": 14,
+    "monthly_spend_usd": 18967.05,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0015",
+    "days_since_last_login": 86,
+    "open_tickets": 0,
+    "monthly_spend_usd": 4928.78,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0016",
+    "days_since_last_login": 70,
+    "open_tickets": 6,
+    "monthly_spend_usd": 7085.36,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0017",
+    "days_since_last_login": 20,
+    "open_tickets": 12,
+    "monthly_spend_usd": 20443.02,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0018",
+    "days_since_last_login": 17,
+    "open_tickets": 9,
+    "monthly_spend_usd": 3067.66,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0019",
+    "days_since_last_login": 84,
+    "open_tickets": 6,
+    "monthly_spend_usd": 6460.92,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0020",
+    "days_since_last_login": 61,
+    "open_tickets": 4,
+    "monthly_spend_usd": 16906.65,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0021",
+    "days_since_last_login": 63,
+    "open_tickets": 11,
+    "monthly_spend_usd": 559.32,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0022",
+    "days_since_last_login": 44,
+    "open_tickets": 11,
+    "monthly_spend_usd": 21227.56,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0023",
+    "days_since_last_login": 47,
+    "open_tickets": 0,
+    "monthly_spend_usd": 9504.13,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0024",
+    "days_since_last_login": 60,
+    "open_tickets": 2,
+    "monthly_spend_usd": 20276.33,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0025",
+    "days_since_last_login": 99,
+    "open_tickets": 1,
+    "monthly_spend_usd": 20958.92,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0026",
+    "days_since_last_login": 49,
+    "open_tickets": 7,
+    "monthly_spend_usd": 2603.48,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0027",
+    "days_since_last_login": 37,
+    "open_tickets": 6,
+    "monthly_spend_usd": 4543.71,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0028",
+    "days_since_last_login": 41,
+    "open_tickets": 14,
+    "monthly_spend_usd": 22935.26,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0029",
+    "days_since_last_login": 65,
+    "open_tickets": 5,
+    "monthly_spend_usd": 7086.18,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0030",
+    "days_since_last_login": 19,
+    "open_tickets": 1,
+    "monthly_spend_usd": 22963.58,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0031",
+    "days_since_last_login": 3,
+    "open_tickets": 14,
+    "monthly_spend_usd": 19157.23,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0032",
+    "days_since_last_login": 11,
+    "open_tickets": 7,
+    "monthly_spend_usd": 18997.32,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0033",
+    "days_since_last_login": 30,
+    "open_tickets": 12,
+    "monthly_spend_usd": 10706.93,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0034",
+    "days_since_last_login": 65,
+    "open_tickets": 11,
+    "monthly_spend_usd": 3789.74,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0035",
+    "days_since_last_login": 96,
+    "open_tickets": 9,
+    "monthly_spend_usd": 10185.97,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0036",
+    "days_since_last_login": 54,
+    "open_tickets": 7,
+    "monthly_spend_usd": 19064.03,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0037",
+    "days_since_last_login": 35,
+    "open_tickets": 4,
+    "monthly_spend_usd": 1320.92,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0038",
+    "days_since_last_login": 99,
+    "open_tickets": 6,
+    "monthly_spend_usd": 7349.67,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0039",
+    "days_since_last_login": 21,
+    "open_tickets": 1,
+    "monthly_spend_usd": 14511.27,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0040",
+    "days_since_last_login": 94,
+    "open_tickets": 1,
+    "monthly_spend_usd": 10726.6,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0041",
+    "days_since_last_login": 14,
+    "open_tickets": 1,
+    "monthly_spend_usd": 10561.22,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0042",
+    "days_since_last_login": 96,
+    "open_tickets": 4,
+    "monthly_spend_usd": 18770.35,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0043",
+    "days_since_last_login": 40,
+    "open_tickets": 10,
+    "monthly_spend_usd": 15567.05,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0044",
+    "days_since_last_login": 77,
+    "open_tickets": 8,
+    "monthly_spend_usd": 8771.46,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0045",
+    "days_since_last_login": 96,
+    "open_tickets": 0,
+    "monthly_spend_usd": 17761.07,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0046",
+    "days_since_last_login": 41,
+    "open_tickets": 13,
+    "monthly_spend_usd": 13713.13,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0047",
+    "days_since_last_login": 93,
+    "open_tickets": 3,
+    "monthly_spend_usd": 2064.01,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0048",
+    "days_since_last_login": 55,
+    "open_tickets": 13,
+    "monthly_spend_usd": 5528.16,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0049",
+    "days_since_last_login": 92,
+    "open_tickets": 7,
+    "monthly_spend_usd": 24485.03,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0050",
+    "days_since_last_login": 68,
+    "open_tickets": 4,
+    "monthly_spend_usd": 6732.67,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0051",
+    "days_since_last_login": 14,
+    "open_tickets": 0,
+    "monthly_spend_usd": 13082.81,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0052",
+    "days_since_last_login": 100,
+    "open_tickets": 7,
+    "monthly_spend_usd": 8338.04,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0053",
+    "days_since_last_login": 68,
+    "open_tickets": 5,
+    "monthly_spend_usd": 5445.56,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0054",
+    "days_since_last_login": 51,
+    "open_tickets": 10,
+    "monthly_spend_usd": 12841.06,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0055",
+    "days_since_last_login": 99,
+    "open_tickets": 9,
+    "monthly_spend_usd": 15388.38,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0056",
+    "days_since_last_login": 87,
+    "open_tickets": 7,
+    "monthly_spend_usd": 4938.77,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0057",
+    "days_since_last_login": 4,
+    "open_tickets": 4,
+    "monthly_spend_usd": 7586.34,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0058",
+    "days_since_last_login": 65,
+    "open_tickets": 2,
+    "monthly_spend_usd": 21010.72,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0059",
+    "days_since_last_login": 28,
+    "open_tickets": 13,
+    "monthly_spend_usd": 9955.33,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0060",
+    "days_since_last_login": 20,
+    "open_tickets": 3,
+    "monthly_spend_usd": 12957.24,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0061",
+    "days_since_last_login": 16,
+    "open_tickets": 0,
+    "monthly_spend_usd": 4649.76,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0062",
+    "days_since_last_login": 52,
+    "open_tickets": 5,
+    "monthly_spend_usd": 22163.82,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0063",
+    "days_since_last_login": 54,
+    "open_tickets": 8,
+    "monthly_spend_usd": 12783.46,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0064",
+    "days_since_last_login": 74,
+    "open_tickets": 3,
+    "monthly_spend_usd": 22723.01,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0065",
+    "days_since_last_login": 22,
+    "open_tickets": 14,
+    "monthly_spend_usd": 9367.62,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0066",
+    "days_since_last_login": 32,
+    "open_tickets": 9,
+    "monthly_spend_usd": 16521.48,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0067",
+    "days_since_last_login": 20,
+    "open_tickets": 10,
+    "monthly_spend_usd": 21459.84,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0068",
+    "days_since_last_login": 92,
+    "open_tickets": 6,
+    "monthly_spend_usd": 15950.58,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0069",
+    "days_since_last_login": 18,
+    "open_tickets": 7,
+    "monthly_spend_usd": 902.12,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0070",
+    "days_since_last_login": 0,
+    "open_tickets": 7,
+    "monthly_spend_usd": 6097.6,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0071",
+    "days_since_last_login": 99,
+    "open_tickets": 2,
+    "monthly_spend_usd": 11346.74,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0072",
+    "days_since_last_login": 93,
+    "open_tickets": 6,
+    "monthly_spend_usd": 1672.88,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0073",
+    "days_since_last_login": 85,
+    "open_tickets": 8,
+    "monthly_spend_usd": 998.54,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0074",
+    "days_since_last_login": 39,
+    "open_tickets": 11,
+    "monthly_spend_usd": 11951.68,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0075",
+    "days_since_last_login": 88,
+    "open_tickets": 0,
+    "monthly_spend_usd": 9247.85,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0076",
+    "days_since_last_login": 14,
+    "open_tickets": 14,
+    "monthly_spend_usd": 24467.91,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0077",
+    "days_since_last_login": 89,
+    "open_tickets": 10,
+    "monthly_spend_usd": 19542.55,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0078",
+    "days_since_last_login": 58,
+    "open_tickets": 6,
+    "monthly_spend_usd": 1032.37,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0079",
+    "days_since_last_login": 56,
+    "open_tickets": 4,
+    "monthly_spend_usd": 9247.35,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0080",
+    "days_since_last_login": 43,
+    "open_tickets": 10,
+    "monthly_spend_usd": 9266.28,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0081",
+    "days_since_last_login": 73,
+    "open_tickets": 5,
+    "monthly_spend_usd": 16774.59,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0082",
+    "days_since_last_login": 90,
+    "open_tickets": 9,
+    "monthly_spend_usd": 23020.09,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0083",
+    "days_since_last_login": 3,
+    "open_tickets": 8,
+    "monthly_spend_usd": 18487.15,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0084",
+    "days_since_last_login": 39,
+    "open_tickets": 5,
+    "monthly_spend_usd": 24028.82,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0085",
+    "days_since_last_login": 34,
+    "open_tickets": 10,
+    "monthly_spend_usd": 3205.16,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0086",
+    "days_since_last_login": 74,
+    "open_tickets": 9,
+    "monthly_spend_usd": 16704.71,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0087",
+    "days_since_last_login": 67,
+    "open_tickets": 9,
+    "monthly_spend_usd": 8782.44,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0088",
+    "days_since_last_login": 16,
+    "open_tickets": 13,
+    "monthly_spend_usd": 7216.47,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0089",
+    "days_since_last_login": 82,
+    "open_tickets": 2,
+    "monthly_spend_usd": 24326.9,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0090",
+    "days_since_last_login": 44,
+    "open_tickets": 9,
+    "monthly_spend_usd": 21221.63,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0091",
+    "days_since_last_login": 99,
+    "open_tickets": 9,
+    "monthly_spend_usd": 9992.53,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0092",
+    "days_since_last_login": 76,
+    "open_tickets": 12,
+    "monthly_spend_usd": 22843.59,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0093",
+    "days_since_last_login": 24,
+    "open_tickets": 12,
+    "monthly_spend_usd": 16946.29,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0094",
+    "days_since_last_login": 94,
+    "open_tickets": 10,
+    "monthly_spend_usd": 23226.23,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0095",
+    "days_since_last_login": 20,
+    "open_tickets": 4,
+    "monthly_spend_usd": 17335.15,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0096",
+    "days_since_last_login": 12,
+    "open_tickets": 14,
+    "monthly_spend_usd": 11796.14,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0097",
+    "days_since_last_login": 92,
+    "open_tickets": 13,
+    "monthly_spend_usd": 16666.72,
+    "churned": 1
+  },
+  {
+    "id": "label_859_0098",
+    "days_since_last_login": 48,
+    "open_tickets": 0,
+    "monthly_spend_usd": 6348.39,
+    "churned": 0
+  },
+  {
+    "id": "label_859_0099",
+    "days_since_last_login": 6,
+    "open_tickets": 7,
+    "monthly_spend_usd": 10909.98,
+    "churned": 0
+  }
+]

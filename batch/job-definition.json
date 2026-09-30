@@ -1,0 +1,49 @@
+{
+  "jobDefinitionName": "risk-engine",
+  "type": "container",
+  "platformCapabilities": [
+    "FARGATE"
+  ],
+  "containerProperties": {
+    "image": "RISK_ENGINE_IMAGE",
+    "executionRoleArn": "arn:aws:iam::ACCOUNT_ID:role/brahma-demo-batch-exec",
+    "jobRoleArn": "arn:aws:iam::ACCOUNT_ID:role/brahma-demo-batch-job",
+    "resourceRequirements": [
+      {
+        "type": "VCPU",
+        "value": "1"
+      },
+      {
+        "type": "MEMORY",
+        "value": "2048"
+      }
+    ],
+    "environment": [
+      {
+        "name": "DATA_BUCKET",
+        "value": "brahma-demo-data-ACCOUNT_ID"
+      },
+      {
+        "name": "AWS_DEFAULT_REGION",
+        "value": "us-east-1"
+      }
+    ],
+    "networkConfiguration": {
+      "assignPublicIp": "ENABLED"
+    },
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "/aws/batch/job",
+        "awslogs-region": "us-east-1",
+        "awslogs-stream-prefix": "risk-engine"
+      }
+    }
+  },
+  "timeout": {
+    "attemptDurationSeconds": 600
+  },
+  "retryStrategy": {
+    "attempts": 1
+  }
+}
