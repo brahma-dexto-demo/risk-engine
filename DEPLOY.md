@@ -123,7 +123,12 @@ print(
 ```
 
 Check `generated_at` belongs to this run: the output key is overwritten on each
-score invocation. A failed eval marks the job failed even if scoring wrote a file.
+score invocation. Verify each `scores` entry retains `id` and `probability` and has
+integer `risk_score` in [0, 100], computed as
+`clamp(0, 100, floor(probability * 100 + 0.5))`. Roll out and run this producer
+before accounts-api, then ops-console. Older artifacts without `risk_score` remain
+unknown/null to consumers until a fresh Batch job completes. A failed eval marks
+the job failed even if scoring wrote a file.
 
 ## Local run
 
