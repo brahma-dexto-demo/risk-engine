@@ -54,7 +54,7 @@ def test_job_score_and_eval(tmp_path, monkeypatch):
     output = json.loads((tmp_path / "scores/latest.json").read_text())
     assert len(output["scores"]) == 3
     assert output["generated_at"]
-    assert output["model_version"] == "churn-logreg-v1"
+    assert output["model_version"] == "churn-logreg-v2"
     result = subprocess.run(
         [sys.executable, "-m", "risk_engine.job", "eval"],
         check=True,
@@ -74,3 +74,12 @@ def test_eval_cli_exits_nonzero_on_threshold_failure(tmp_path, monkeypatch, caps
     monkeypatch.setattr(sys, "argv", ["job", "eval"])
     assert job.main() == 1
     assert not json.loads(capsys.readouterr().out)["passed"]
+
+
+def test_demo_accounts_get_a_spread_of_probabilities():
+    accounts = json.loads((ROOT / "data/accounts/accounts.json").read_text())
+    scores = probabilities(accounts, load_model())
+    high = sum(p >= 0.7 for p in scores) / len(scores)
+    saturated = sum(p >= 0.995 or p <= 0.005 for p in scores) / len(scores)
+    assert 0.15 <= high <= 0.35
+    assert saturated <= 0.05

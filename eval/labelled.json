@@ -18,7 +18,7 @@
     "days_since_last_login": 75,
     "open_tickets": 7,
     "monthly_spend_usd": 18784.87,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0003",
@@ -32,7 +32,7 @@
     "days_since_last_login": 98,
     "open_tickets": 5,
     "monthly_spend_usd": 21470.29,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0005",
@@ -46,7 +46,7 @@
     "days_since_last_login": 97,
     "open_tickets": 0,
     "monthly_spend_usd": 19961.7,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0007",
@@ -60,7 +60,7 @@
     "days_since_last_login": 69,
     "open_tickets": 10,
     "monthly_spend_usd": 2215.81,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0009",
@@ -116,7 +116,7 @@
     "days_since_last_login": 70,
     "open_tickets": 6,
     "monthly_spend_usd": 7085.36,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0017",
@@ -151,7 +151,7 @@
     "days_since_last_login": 63,
     "open_tickets": 11,
     "monthly_spend_usd": 559.32,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0022",
@@ -186,7 +186,7 @@
     "days_since_last_login": 49,
     "open_tickets": 7,
     "monthly_spend_usd": 2603.48,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0027",
@@ -200,14 +200,14 @@
     "days_since_last_login": 41,
     "open_tickets": 14,
     "monthly_spend_usd": 22935.26,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0029",
     "days_since_last_login": 65,
     "open_tickets": 5,
     "monthly_spend_usd": 7086.18,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0030",
@@ -235,14 +235,14 @@
     "days_since_last_login": 30,
     "open_tickets": 12,
     "monthly_spend_usd": 10706.93,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0034",
     "days_since_last_login": 65,
     "open_tickets": 11,
     "monthly_spend_usd": 3789.74,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0035",
@@ -284,7 +284,7 @@
     "days_since_last_login": 94,
     "open_tickets": 1,
     "monthly_spend_usd": 10726.6,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0041",
@@ -298,7 +298,7 @@
     "days_since_last_login": 96,
     "open_tickets": 4,
     "monthly_spend_usd": 18770.35,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0043",
@@ -312,7 +312,7 @@
     "days_since_last_login": 77,
     "open_tickets": 8,
     "monthly_spend_usd": 8771.46,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0045",
@@ -326,14 +326,14 @@
     "days_since_last_login": 41,
     "open_tickets": 13,
     "monthly_spend_usd": 13713.13,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0047",
     "days_since_last_login": 93,
     "open_tickets": 3,
     "monthly_spend_usd": 2064.01,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0048",
@@ -347,14 +347,14 @@
     "days_since_last_login": 92,
     "open_tickets": 7,
     "monthly_spend_usd": 24485.03,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0050",
     "days_since_last_login": 68,
     "open_tickets": 4,
     "monthly_spend_usd": 6732.67,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0051",
@@ -382,7 +382,7 @@
     "days_since_last_login": 51,
     "open_tickets": 10,
     "monthly_spend_usd": 12841.06,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0055",
@@ -417,7 +417,7 @@
     "days_since_last_login": 28,
     "open_tickets": 13,
     "monthly_spend_usd": 9955.33,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0060",
@@ -445,7 +445,7 @@
     "days_since_last_login": 54,
     "open_tickets": 8,
     "monthly_spend_usd": 12783.46,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0064",
@@ -459,7 +459,7 @@
     "days_since_last_login": 22,
     "open_tickets": 14,
     "monthly_spend_usd": 9367.62,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0066",
@@ -515,7 +515,7 @@
     "days_since_last_login": 85,
     "open_tickets": 8,
     "monthly_spend_usd": 998.54,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0074",
@@ -529,7 +529,7 @@
     "days_since_last_login": 88,
     "open_tickets": 0,
     "monthly_spend_usd": 9247.85,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0076",
@@ -543,7 +543,7 @@
     "days_since_last_login": 89,
     "open_tickets": 10,
     "monthly_spend_usd": 19542.55,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0078",
@@ -564,21 +564,21 @@
     "days_since_last_login": 43,
     "open_tickets": 10,
     "monthly_spend_usd": 9266.28,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0081",
     "days_since_last_login": 73,
     "open_tickets": 5,
     "monthly_spend_usd": 16774.59,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0082",
     "days_since_last_login": 90,
     "open_tickets": 9,
     "monthly_spend_usd": 23020.09,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0083",
@@ -599,28 +599,28 @@
     "days_since_last_login": 34,
     "open_tickets": 10,
     "monthly_spend_usd": 3205.16,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0086",
     "days_since_last_login": 74,
     "open_tickets": 9,
     "monthly_spend_usd": 16704.71,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0087",
     "days_since_last_login": 67,
     "open_tickets": 9,
     "monthly_spend_usd": 8782.44,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0088",
     "days_since_last_login": 16,
     "open_tickets": 13,
     "monthly_spend_usd": 7216.47,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0089",
@@ -648,7 +648,7 @@
     "days_since_last_login": 76,
     "open_tickets": 12,
     "monthly_spend_usd": 22843.59,
-    "churned": 1
+    "churned": 0
   },
   {
     "id": "label_859_0093",

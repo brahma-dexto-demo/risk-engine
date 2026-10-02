@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 from risk_engine.features import features
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_VERSION = "churn-logreg-v1"
+MODEL_VERSION = "churn-logreg-v2"
 MODEL_PATH = ROOT / "models/churn.joblib"
 
 
@@ -23,15 +23,16 @@ def labelled(seed, count):
         days = rng.randint(0, 100)
         tickets = rng.randint(0, 14)
         spend = round(rng.uniform(100, 25000), 2)
-        # Synthetic labels encode inactivity and support load with mild noise.
-        latent = days / 20 + tickets / 5 - spend / 15000 + rng.gauss(0, 0.35)
+        # Synthetic labels encode inactivity and support load. The noise is large enough
+        # that churn is not separable, so probabilities spread instead of saturating.
+        latent = days / 20 + tickets / 5 - spend / 15000 + rng.gauss(0, 1.2)
         rows.append(
             {
                 "id": f"label_{seed}_{i:04d}",
                 "days_since_last_login": days,
                 "open_tickets": tickets,
                 "monthly_spend_usd": spend,
-                "churned": int(latent > 3.2),
+                "churned": int(latent > 4.4),
             }
         )
     return rows
@@ -39,7 +40,9 @@ def labelled(seed, count):
 
 def train():
     rows = labelled(858, 1000)
-    model = make_pipeline(StandardScaler(), LogisticRegression(random_state=858, max_iter=1000))
+    model = make_pipeline(
+        StandardScaler(), LogisticRegression(C=0.05, random_state=858, max_iter=1000)
+    )
     model.fit(features(rows), [row["churned"] for row in rows])
     MODEL_PATH.parent.mkdir(parents=True, exist_ok=True)
     joblib.dump({"model": model, "version": MODEL_VERSION}, MODEL_PATH)
