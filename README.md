@@ -7,7 +7,7 @@ This is a demo repository with synthetic, fictional accounts; it contains no rea
 ## Local development
 
 ```sh
-uv sync
+uv sync --locked
 uv run python -m risk_engine.train
 uv run python -m risk_engine.job score
 uv run python -m risk_engine.job eval
@@ -25,8 +25,13 @@ commit the model with the lockfile if the scikit-learn version changes.
 `LOCAL_DATA_DIR` defaults to `./data`. `DATA_BUCKET` takes precedence and selects
 S3 with the default AWS credential chain. Scoring reads `accounts/accounts.json`
 and writes `scores/latest.json` containing `model_version`, UTC `generated_at`,
-and `scores` entries with `id` and `probability` in [0, 1]. Probabilities are
-reproducible; the run timestamp changes. Output files are not committed.
+and `scores` entries with string `id`, `probability` in [0, 1], and integer
+`risk_score` in [0, 100]. The score is `clamp(0, 100, floor(probability * 100 + 0.5))`
+(half-up rounding): 0.734 → 73 and 0.705 → 71. The original probability is retained
+for compatibility. Both values are reproducible for fixed inputs and model; only
+the UTC run timestamp changes. Output files are not committed. Deploy the producer
+before accounts-api and ops-console; older score artifacts lack `risk_score`, so
+consumers report unknown/null until a fresh Batch score run writes the new format.
 Evaluation always uses bundled `eval/labelled.json` and `eval/thresholds.json`,
 prints AUC, bounds, determinism and pass status as JSON, and exits 1 on failure.
 The synthetic AUC threshold is 0.80; this is a demo gate, not real model validation.

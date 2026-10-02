@@ -1,12 +1,14 @@
 import json
 import subprocess
 import sys
+from unittest.mock import Mock
 
 import numpy as np
+import pytest
 
 from risk_engine.evaluation import evaluate
 from risk_engine.features import features
-from risk_engine.scoring import load_model, probabilities, score_accounts
+from risk_engine.scoring import load_model, probabilities, risk_score, score_accounts
 from risk_engine.train import ROOT, labelled
 
 
@@ -24,6 +26,9 @@ def test_scoring_is_deterministic_and_bounded():
     assert scores == score_accounts(rows, artifact)
     assert [s["id"] for s in scores] == [r["id"] for r in rows]
     assert all(0 <= s["probability"] <= 1 for s in scores)
+    assert all(s["risk_score"] == risk_score(s["probability"]) for s in scores)
+    assert all(type(s["risk_score"]) is int and 0 <= s["risk_score"] <= 100 for s in scores)
+    assert score_accounts([], artifact) == []
     assert probabilities([], artifact) == []
     low, high = probabilities(
         [
@@ -33,6 +38,38 @@ def test_scoring_is_deterministic_and_bounded():
         artifact,
     )
     assert low < high
+
+
+@pytest.mark.parametrize(
+    ("probability", "expected"),
+    [(0, 0), (0.3949, 39), (0.395, 40), (0.6949, 69), (0.695, 70),
+     (0.705, 71), (0.734, 73), (0.995, 100), (1, 100)],
+)
+def test_risk_score_rounds_half_up_at_boundaries(probability, expected):
+    assert risk_score(probability) == expected
+
+
+@pytest.mark.parametrize("probability", [-0.01, 1.01, float("nan"), float("inf")])
+def test_risk_score_rejects_invalid_probabilities(probability):
+    with pytest.raises(ValueError):
+        risk_score(probability)
+
+
+def test_score_accounts_preserves_probability_and_order():
+    model = Mock()
+    model.predict_proba.return_value = np.array([[0.266, 0.734], [0.295, 0.705]])
+    rows = [
+        {"id": "a", "days_since_last_login": 1, "open_tickets": 2,
+         "monthly_spend_usd": 100},
+        {"id": "b", "days_since_last_login": 3, "open_tickets": 4,
+         "monthly_spend_usd": 200},
+    ]
+    expected = [
+        {"id": "a", "probability": 0.734, "risk_score": 73},
+        {"id": "b", "probability": 0.705, "risk_score": 71},
+    ]
+    assert score_accounts(rows, {"model": model}) == expected
+    assert score_accounts(rows, {"model": model}) == expected
 
 
 def test_evaluation_pass_and_fail():
@@ -55,6 +92,10 @@ def test_job_score_and_eval(tmp_path, monkeypatch):
     assert len(output["scores"]) == 3
     assert output["generated_at"]
     assert output["model_version"] == "churn-logreg-v1"
+    assert [score["id"] for score in output["scores"]] == [row["id"] for row in rows]
+    assert all(set(score) == {"id", "probability", "risk_score"} for score in output["scores"])
+    assert all(score["risk_score"] == risk_score(score["probability"])
+               for score in output["scores"])
     result = subprocess.run(
         [sys.executable, "-m", "risk_engine.job", "eval"],
         check=True,
