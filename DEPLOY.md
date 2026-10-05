@@ -122,6 +122,13 @@ print(
 )
 ```
 
+Verify every score retains `id` and `probability` and includes integer
+`risk_score` in 0..100 equal to `floor(clamp(probability, 0, 1) * 100 + 0.5)`.
+Keep `model_version` and UTC `generated_at`; the output schema is additive.
+Merge/roll out engine → API → console, refreshing `scores/latest.json` with this
+engine before dependent consumers are enabled. Old artifacts lack `risk_score`;
+do not infer a zero score from a missing field or hide corrupt artifacts as absence.
+
 Check `generated_at` belongs to this run: the output key is overwritten on each
 score invocation. A failed eval marks the job failed even if scoring wrote a file.
 
