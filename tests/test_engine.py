@@ -6,7 +6,7 @@ import numpy as np
 
 from risk_engine.evaluation import evaluate
 from risk_engine.features import features
-from risk_engine.scoring import load_model, probabilities, score_accounts
+from risk_engine.scoring import load_model, probabilities, risk_score, score_accounts
 from risk_engine.train import ROOT, labelled
 
 
@@ -24,6 +24,10 @@ def test_scoring_is_deterministic_and_bounded():
     assert scores == score_accounts(rows, artifact)
     assert [s["id"] for s in scores] == [r["id"] for r in rows]
     assert all(0 <= s["probability"] <= 1 for s in scores)
+    assert all(type(s["risk_score"]) is int and 0 <= s["risk_score"] <= 100 for s in scores)
+    assert [s["probability"] for s in scores] == probabilities(rows, artifact)
+    assert all(s["risk_score"] == risk_score(s["probability"]) for s in scores)
+    assert score_accounts([], artifact) == []
     assert probabilities([], artifact) == []
     low, high = probabilities(
         [
@@ -52,7 +56,12 @@ def test_job_score_and_eval(tmp_path, monkeypatch):
     (tmp_path / "accounts/accounts.json").write_text(json.dumps(rows))
     subprocess.run([sys.executable, "-m", "risk_engine.job", "score"], check=True)
     output = json.loads((tmp_path / "scores/latest.json").read_text())
-    assert len(output["scores"]) == 3
+    assert output["scores"] == score_accounts(rows, load_model())
+    assert set(output) == {"scores", "generated_at", "model_version"}
+    subprocess.run([sys.executable, "-m", "risk_engine.job", "score"], check=True)
+    rerun = json.loads((tmp_path / "scores/latest.json").read_text())
+    assert rerun["scores"] == output["scores"]
+    assert rerun["model_version"] == output["model_version"]
     assert output["generated_at"]
     assert output["model_version"] == "churn-logreg-v2"
     result = subprocess.run(
